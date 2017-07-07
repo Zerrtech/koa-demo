@@ -12,11 +12,11 @@ cache:
   directories:
   - $HOME/.yarn-cache
 install:
-- cd backend; yarn
-- cd frontend; yarn
+- pushd backend && yarn && popd
+- pushd frontend && yarn && popd
 script:
-- cd backend; yarn lint
-- cd frontend; yarn lint
+- pushd backend && yarn lint && popd
+- pushd frontend && yarn lint && popd
 notifications:
   slack:
     secure: NeTngiwG0cUF0Vs12K2o21ZvK/XuuoQvT2GbI2qbIal4eJkA3RGqfL63wXLxKlgCErgi4Qi6+Y8/ymDX3HARfV7FU7Q/I9ovBd0c4u9jGRWBMVYDU8/tq66Z/cz0lqmn7ykecclQssTp96NBbuHksHq78vFjG8qe9TjgScUGcArB+f8cyvea9lKYkL+9y3Pkuxmm9G4/2ZXwuEq9HJMwXomk3df5ijeY6l7OSFWL3ImMMBtiPQHcgsi3uDXuuE9AW96PCbmhVTASpM60xsoBqUe1SSPYbjA5zWJT/Bt35qKX196NKBnEk0drnrQejfFyYV2KGQzs24NY6/L1wn90uIh7eOf6fSa//UbKGWFk+d6ucdRBdVsIqWR4A1cCmMICHlyi4sjuHZ2roEAzVVlM8oXfP+4B02HzVW4UcMTU8VUlOwdiTkDleGxjPNFiCcpGakZHjLYNhUKa/heq0wWGuqh5fr+eZIsfwp8gYSxeuEbQVbxgx9OQhj2n/b7Gtsa1Z2BfViW1urXvN1MztC4TP0iwPV4dfQJdNMvAjNe+sz3unWHcx7aKxnMzsP95GgMkj7DgibRNktYOqlxpRnO0XvnBBKMBZxeQdAznKTrP26IGgofY1e4VQrl3kxGr2DqDIxNBDIgVWtz9bN/xcbfSJcbq3hl8AOwSzvi9Al5LAyU=
