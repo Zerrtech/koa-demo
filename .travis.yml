@@ -5,3 +5,4 @@ install:
 script:
   - cd backend; yarn lint
   - cd frontend; yarn lint
+  
