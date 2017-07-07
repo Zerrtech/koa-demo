@@ -1,3 +1,5 @@
+dist: trusty
+sudo: required
 before_install:
 - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 - sudo apt-key adv --keyserver pgp.mit.edu --recv D101F7899D41F3C3
