@@ -11,8 +11,4 @@ export default (app) => {
   const ws = koaws(app, options)
 
   app.use(ws)
-
-  app.ws.register('hello', function* () {
-    this.result('world!')
-  });
 }

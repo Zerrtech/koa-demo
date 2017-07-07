@@ -15,8 +15,8 @@
     "eslint": "^4.1.1",
     "eslint-config-google": "^0.8.0",
     "keygrip": "^1.0.1",
+    "knex": "^0.13.0",
     "koa": "^2.3.0",
-    "koa-bookshelf": "^0.0.2",
     "pg": "^6.4.0"
   }
 }
