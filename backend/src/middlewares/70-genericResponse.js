@@ -1,6 +1,6 @@
 
 export default (app) => {
-    app.use(ctx => {
+    app.use((ctx) => {
         ctx.body = 'Hello World';
     });
-}
+};

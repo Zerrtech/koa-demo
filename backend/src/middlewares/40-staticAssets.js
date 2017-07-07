@@ -2,14 +2,14 @@ const path = require('path');
 const fs = require('fs');
 
 export default (app) => {
-    app.use(async function (ctx, next) {
-        if (!ctx.path || ctx.path == "/" || ctx.path.match(/^\/?(index.html|static|favicon|manifest|service-worker)/)) {
+    app.use(async function(ctx, next) {
+        if (!ctx.path || ctx.path == '/' || ctx.path.match(/^\/?(index.html|static|favicon|manifest|service-worker)/)) {
             let fpath;
 
-            if (!ctx.path || ctx.path == "/") {
-                fpath = path.join(__dirname, "../../../frontend/build/", "/index.html");
+            if (!ctx.path || ctx.path == '/') {
+                fpath = path.join(__dirname, '../../../frontend/build/', '/index.html');
             } else {
-                fpath = path.join(__dirname, "../../../frontend/build/", ctx.path);
+                fpath = path.join(__dirname, '../../../frontend/build/', ctx.path);
             }
 
             const fstat = await stat(fpath);
@@ -21,8 +21,8 @@ export default (app) => {
         }
 
         await next();
-    })
-}
+    });
+};
 
 function stat(file) {
   return new Promise(function(resolve, reject) {

@@ -1,8 +1,8 @@
 import Koa from 'koa';
-import middlewares from './middlewares'
+import middlewares from './middlewares';
 
 const app = new Koa();
 
-middlewares(app)
+middlewares(app);
 
 app.listen(3000);

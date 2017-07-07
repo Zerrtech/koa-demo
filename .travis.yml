@@ -1,0 +1,7 @@
+install:
+  - cd backend; yarn
+  - cd frontend; yarn
+
+script:
+  - cd backend; yarn lint
+  - cd frontend; yarn lint
