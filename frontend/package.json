@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@zerrtech/koa-ws": "^1.0.3",
     "eslint": "^4.1.1",
     "eslint-plugin-react": "^7.1.0",
     "react": "^15.6.1",

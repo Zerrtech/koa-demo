@@ -5,6 +5,7 @@
     "lint-fix": "eslint src --fix"
   },
   "dependencies": {
+    "@zerrtech/koa-ws": "^1.0.3",
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-preset-2017": "^0.0.0",
